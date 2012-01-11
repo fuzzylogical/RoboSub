@@ -2,17 +2,17 @@
 install all the prereqs
 
 sudo apt-get install build-essential libgtk2.0-dev libjpeg62-dev libtiff4-dev
-libjasper-dev libopenexr-dev cmake python-dev python-numpy libtbb-dev
-libeigen2-dev yasm libfaac-dev libopencore-amrnb-dev libopencore-amrwb-dev
-libtheora-dev libvorbis-dev libxvidcore-dev
+   libjasper-dev libopenexr-dev cmake python-dev python-numpy libtbb-dev
+   libeigen2-dev yasm libfaac-dev libopencore-amrnb-dev libopencore-amrwb-dev
+   libtheora-dev libvorbis-dev libxvidcore-dev
 
 wget http://ffmpeg.org/releases/ffmpeg-0.7-rc1.tar.gz
 tar -xvzf ffmpeg-0.7-rc1.tar.gz
 cd ffmpeg-0.7-rc1
 ./configure --enable-gpl --enable-version3 --enable-nonfree --enable-postproc
---enable-libfaac --enable-libopencore-amrnb --enable-libopencore-amrwb
---enable-libtheora --enable-libvorbis --enable-libxvid --enable-x11grab
---enable-swscale --enable-shared
+   --enable-libfaac --enable-libopencore-amrnb --enable-libopencore-amrwb
+   --enable-libtheora --enable-libvorbis --enable-libxvid --enable-x11grab
+   --enable-swscale --enable-shared
 make
 sudo make install
 
